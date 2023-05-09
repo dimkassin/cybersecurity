@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Скорборд кибербезопасности</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Логотип" class="logo">
+    </div>
+    <h1>Скорборд кибербезопасности</h1>
+   </header>
+  <main>
+    <div class="content">
+      <h2>Рейтинг пользователей</h2>
+      <table>
+        <thead>
+          <tr>
+            <th data-field="username">Пользователь</th>
+            <th data-field="category1">Категория 1</th>
+            <th data-field="category2">Категория 2</th>
+            <th data-field="category3">Категория 3</th>
+          </tr>
+        </thead>
+        <tbody id="users-table">
+        </tbody>
+      </table>
+      <h2>Поиск пользователя</h2>
+      <form id="user-search-form">
+        <label> Имя пользователя: <input type="text" id="username-input" /> </label>
+        <button type="submit">Поиск</button>
+      </form>
+      <div id="user-info" style="display:none;">
+        <h3>Результаты пользователя <span id="user-name"></span></h3>
+        <p> Категория 1: <span id="user-category1"></span> / <span id="user-total-category1"></span> </p>
+        <p> Категория 2: <span id="user-category2"></span> / <span id="user-total-category2"></span> </p>
+        <p> Категория 3: <span id="user-category3"></span> / <span id="user-total-category3"></span> </p>
+      </div>
+    </main>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
